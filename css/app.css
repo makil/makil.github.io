@@ -1,0 +1,41 @@
+﻿#wrapper {
+    width: 800px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+span {
+    font-style: italic
+}
+
+#container {
+    position: relative;
+    float: left;
+    background-color: cornflowerblue;
+}
+
+.scores {
+    margin: 8px;
+    float: left;
+}
+
+.instructions {
+    margin: 8px;
+    clear:both;
+}
+#gameCanvas {
+    height: 360px;
+    width: 240px;
+}
+
+#floatingMessage {
+    position: absolute; 
+    top: 120px; 
+    left: 60px;
+    width: 120px;
+    text-align: center;
+    background-color: azure;
+}
