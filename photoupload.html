@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <h1>Hello Vertriebler</h1>
+    <form>
+        <input id="takePictureField" type="file" accept="image/*" />
+        <img id="yourPic" alt="" />
+        <script type="text/javascript">// <![CDATA[
+            $("#inpPicture").on("change", function () {
+                if (event.target.files.length == 1 &&
+                    event.target.files[0].type.indexOf("image/") == 0) {
+                    $("#yourPic").attr("src", URL.createObjectURL(event.target.files[0]));
+                }
+            });
+
+// ]]></script>
+
+    </form>
+</body>
+
+</html>
